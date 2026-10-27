@@ -39,7 +39,7 @@ The scripts read an HF Inference Providers token from `/home/sandbox/.hf_hinglis
 | Gemma-3-27B-it | 91.5% | 93.9% | 0.96x |
 | Qwen3-32B | 90.2% | 82.9% | 1.00x |
 
-These three models on this set; accuracy differences of one item (1.2 pts) are within noise at n=82. Negative results (prompting and effort do not remove Beam's tax) are in the dataset card.
+Three models, one sample per cell; observed values are reported without claiming statistical significance. Negative results (prompting and effort do not remove Beam's tax in these runs) are in the dataset card.
 
 ## License
 
