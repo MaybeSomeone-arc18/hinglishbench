@@ -29,7 +29,7 @@ The scripts read an HF Inference Providers token from `/home/sandbox/.hf_hinglis
 
 ## Methodology in one paragraph
 
-100 GSM8K test items (seed 42) were translated to romanized Hinglish by Beam; 18 failed the automated numeric-preservation check and were excluded, leaving 82 parallel pairs. Every model got the identical zero-shot prompt ("Solve the problem. You may think briefly, then end your reply with a final line containing ONLY the numeric answer."). Grading is numeric exact match on the final line (fallback: last number anywhere). Token tax is the per-item ratio of completion tokens (Hinglish/English), reported as the median over pairs. Two more sets replicate the tax: 100 author-built tiered pairs, and 309 reverse-direction pairs (Beam-authored Hinglish-first items translated to English). See the dataset card for full methodology and limits.
+100 GSM8K test items (seed 42) were translated to romanized Hinglish by Beam; 18 failed the automated numeric-preservation check and were excluded, leaving 82 parallel pairs. Every model got the identical zero-shot prompt ("Solve the problem. You may think briefly, then end your reply with a final line containing ONLY the numeric answer."). Grading is numeric exact match on the final line (fallback: last number anywhere). Token tax is the per-item ratio of completion tokens (Hinglish/English), reported as the median over pairs (upper-middle element of the sorted ratios, as computed in analyze.py: 1.4706 for Beam, reported as 1.47x). Two more sets replicate the tax: 100 author-built tiered pairs, and 309 reverse-direction pairs (Beam-authored Hinglish-first items translated to English). See the dataset card for full methodology and limits.
 
 ## Headline numbers (82 GSM8K pairs, zero-shot, single run)
 
